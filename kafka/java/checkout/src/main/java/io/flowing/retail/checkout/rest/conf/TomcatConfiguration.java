@@ -16,7 +16,8 @@ public class TomcatConfiguration {
         // forward requests index.htm (as we might have two spring boot tomcats
         // running in the same JVM they can see each others resources
         // so we use different index files to avoid confusion
-        registry.addViewController("/").setViewName("forward:/shop.html");
+        registry.addViewController("/").setViewName("forward:/shopIndex.html");
+        registry.addViewController("/checkout").setViewName("forward:/shop.html");
       }
     };
   }
