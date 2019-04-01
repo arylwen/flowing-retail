@@ -17,7 +17,7 @@ public class TomcatConfiguration {
         // running in the same JVM they can see each others resources
         // so we use different index files to avoid confusion
         registry.addViewController("/").setViewName("forward:/shopIndex.html");
-        registry.addViewController("/checkout").setViewName("forward:/shop.html");
+        registry.addViewController("/checkout").setViewName("forward:/checkout/shop.html");
       }
     };
   }
