@@ -11,8 +11,8 @@ public class TomcatConfiguration implements WebMvcConfigurer {
   public void addViewControllers(ViewControllerRegistry registry) {
       // forward requests index.htm (as we might have two spring boot tomcats running in the same JVM they can see each others resources
       // so we use different index files to avoid confusion
-      registry.addViewController("/").setViewName(
-          "forward:/monitor.html");
+      registry.addViewController("/").setViewName("forward:/monitorIndex.html");
+      registry.addViewController("/monitor").setViewName("forward:/monitor.html");
   }
   
 }
