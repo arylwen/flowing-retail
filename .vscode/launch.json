@@ -1,0 +1,161 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CheckoutApplication<flowing-retail-kafka-checkout>",
+            "request": "launch",
+            "mainClass": "io.flowing.retail.checkout.CheckoutApplication",
+            "projectName": "flowing-retail-kafka-checkout"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InventoryApplication<flowing-retail-kafka-choreographed-inventory>",
+            "request": "launch",
+            "mainClass": "io.flowing.retail.inventory.InventoryApplication",
+            "projectName": "flowing-retail-kafka-choreographed-inventory"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PaymentApplication<flowing-retail-kafka-choreographed-payment>",
+            "request": "launch",
+            "mainClass": "io.flowing.retail.payment.PaymentApplication",
+            "projectName": "flowing-retail-kafka-choreographed-payment"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ShippingApplication<flowing-retail-kafka-choreographed-shipping>",
+            "request": "launch",
+            "mainClass": "io.flowing.retail.shipping.ShippingApplication",
+            "projectName": "flowing-retail-kafka-choreographed-shipping"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InventoryApplication<flowing-retail-kafka-inventory>",
+            "request": "launch",
+            "mainClass": "io.flowing.retail.inventory.InventoryApplication",
+            "projectName": "flowing-retail-kafka-inventory"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MonitorApplication<flowing-retail-kafka-monitor>",
+            "request": "launch",
+            "mainClass": "io.flowing.retail.monitor.MonitorApplication",
+            "projectName": "flowing-retail-kafka-monitor"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-OrderApplication<flowing-retail-kafka-order-camunda>",
+            "request": "launch",
+            "mainClass": "io.flowing.retail.order.OrderApplication",
+            "projectName": "flowing-retail-kafka-order-camunda"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-OrderApplication<flowing-retail-kafka-order-zeebe>",
+            "request": "launch",
+            "mainClass": "io.flowing.retail.kafka.order.OrderApplication",
+            "projectName": "flowing-retail-kafka-order-zeebe"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SmokeTestZeebe<flowing-retail-kafka-order-zeebe>",
+            "request": "launch",
+            "mainClass": "io.flowing.retail.kafka.order.SmokeTestZeebe",
+            "projectName": "flowing-retail-kafka-order-zeebe"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PaymentApplication<flowing-retail-kafka-payment-camunda>",
+            "request": "launch",
+            "mainClass": "io.flowing.retail.payment.PaymentApplication",
+            "projectName": "flowing-retail-kafka-payment-camunda"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PaymentApplication<flowing-retail-kafka-payment>",
+            "request": "launch",
+            "mainClass": "io.flowing.retail.payment.PaymentApplication",
+            "projectName": "flowing-retail-kafka-payment"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ShippingApplication<flowing-retail-kafka-shipping>",
+            "request": "launch",
+            "mainClass": "io.flowing.retail.shipping.ShippingApplication",
+            "projectName": "flowing-retail-kafka-shipping"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PaymentRestApplication<flowing-retail-rest-payment-camunda>",
+            "request": "launch",
+            "mainClass": "io.flowing.retail.payment.PaymentRestApplication",
+            "projectName": "flowing-retail-rest-payment-camunda"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CustomerCreditWorker<flowing-retail-rest-payment-camunda>",
+            "request": "launch",
+            "mainClass": "io.flowing.retail.payment.resthacks.worker.CustomerCreditWorker",
+            "projectName": "flowing-retail-rest-payment-camunda"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PaymentRestApplication<flowing-retail-rest-payment-zeebe>",
+            "request": "launch",
+            "mainClass": "io.flowing.retail.payment.PaymentRestApplication",
+            "projectName": "flowing-retail-rest-payment-zeebe"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StripeFakeApplication<flowing-retail-rest-stripe-fake>",
+            "request": "launch",
+            "mainClass": "io.flowing.retail.stripe.fake.StripeFakeApplication",
+            "projectName": "flowing-retail-rest-stripe-fake"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CheckoutApplication<flowing-retail-zeebe-checkout>",
+            "request": "launch",
+            "mainClass": "io.flowing.retail.checkout.CheckoutApplication",
+            "projectName": "flowing-retail-zeebe-checkout"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InventoryApplication<flowing-retail-zeebe-inventory>",
+            "request": "launch",
+            "mainClass": "io.flowing.retail.zeebe.inventory.InventoryApplication",
+            "projectName": "flowing-retail-zeebe-inventory"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-OrderApplication<flowing-retail-zeebe-order>",
+            "request": "launch",
+            "mainClass": "io.flowing.retail.zeebe.order.OrderApplication",
+            "projectName": "flowing-retail-zeebe-order"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PaymentApplication<flowing-retail-zeebe-payment>",
+            "request": "launch",
+            "mainClass": "io.flowing.retail.zeebe.payment.PaymentApplication",
+            "projectName": "flowing-retail-zeebe-payment"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ShippingApplication<flowing-retail-zeebe-shipping>",
+            "request": "launch",
+            "mainClass": "io.flowing.retail.zeebe.shipping.ShippingApplication",
+            "projectName": "flowing-retail-zeebe-shipping"
+        }
+    ]
+}
