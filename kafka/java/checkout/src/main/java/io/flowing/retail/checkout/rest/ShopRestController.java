@@ -30,6 +30,9 @@ public class ShopRestController {
     order.setCustomer(new Customer("Camunda", "Zossener Strasse 55\n10961 Berlin\nGermany"));
     
     Message<Order> message = new Message<Order>("OrderPlacedEvent", order);
+
+    System.out.println("OrderPlacedEvent " + message.toString());
+
     messageSender.send(message);
         
     // note that we cannot easily return an order id here - as everything is asynchronous
