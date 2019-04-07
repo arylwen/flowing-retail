@@ -22,7 +22,7 @@ public class MessageListener {
   private MessageSender messageSender;
 
   @StreamListener(target = Sink.INPUT, 
-      condition="(headers['messageType']?:'')=='RetrievePaymentCommand'")
+      condition="(headers['messageType'])=='RetrievePaymentCommand'")
   @Transactional
   public void retrievePaymentCommandReceived(String messageJson) throws JsonParseException, JsonMappingException, IOException {
     Message<RetrievePaymentCommandPayload> message = new ObjectMapper().readValue(messageJson, new TypeReference<Message<RetrievePaymentCommandPayload>>(){});
