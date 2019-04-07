@@ -21,8 +21,7 @@ public class MessageListener {
   @Autowired
   private MessageSender messageSender;
 
-  @StreamListener(target = Sink.INPUT, 
-      condition="(headers['messageType'])=='RetrievePaymentCommand'")
+  @StreamListener(target = Sink.INPUT, condition="(headers['messageType'])=='RetrievePaymentCommand'")
   @Transactional
   public void retrievePaymentCommandReceived(String messageJson) throws JsonParseException, JsonMappingException, IOException {
     Message<RetrievePaymentCommandPayload> message = new ObjectMapper().readValue(messageJson, new TypeReference<Message<RetrievePaymentCommandPayload>>(){});
@@ -40,6 +39,10 @@ public class MessageListener {
 
   }
   
-    
+  @StreamListener(target = Sink.INPUT)
+  @Transactional
+  public void handleDefaultEvent(String payload) {
+    System.out.println("Received payload: " + payload);
+  } 
     
 }
